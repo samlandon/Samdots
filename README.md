@@ -5,3 +5,9 @@ Just personal projects and stuff I liked from other places and added my personal
 
 ## .zshrc and samBoM
 - I mostly care about the cowsay command where I have a specific version popping up in the terminal at the start of each terminal session. See the samBoM file I am adding right now to this repo, which I save with the other dat files for fortune in the /usr/share/games/fortunes. To edit said samBoM file to add more verses, simply go into the file at that path, then run sudo strfile samBoM to turn it into a usable .dat file!
+
+## Fun packages I like
+- cbonsai - https://gitlab.com/jallbrit/cbonsai
+- cmatrix - https://github.com/abishekvashok/cmatrix
+- cowsay - https://github.com/piuccio/cowsay
+- fortune - https://github.com/shlomif/fortune-mod
