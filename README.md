@@ -11,3 +11,11 @@ Just personal projects and stuff I liked from other places and added my personal
 - cmatrix - https://github.com/abishekvashok/cmatrix
 - cowsay - https://github.com/piuccio/cowsay
 - fortune - https://github.com/shlomif/fortune-mod
+
+### tldr not working
+- tldr seems to not work with ubuntu on the apt install, so here are steps for tealdeer install as tldr:
+```
+sudo wget -O /usr/local/bin/tldr https://github.com/tealdeer-rs/tealdeer/releases/latest/download/tealdeer-linux-x86_64-musl
+sudo chmod +x /usr/local/bin/tldr
+tldr --update
+```
