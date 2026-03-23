@@ -19,3 +19,16 @@ sudo wget -O /usr/local/bin/tldr https://github.com/tealdeer-rs/tealdeer/release
 sudo chmod +x /usr/local/bin/tldr
 tldr --update
 ```
+
+### nvim tabs to be 4 spaces instead of 2
+- in the lua/config/options.lua config file
+```
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+```
+- where expandtab turns tab into multiple spaces instead of a tab character
+- shiftwidth helps when we're shifting a line by a tab amount (If you also want to use tabs for indentation, you should also set shiftwidth to be the same as tabstop)
+- tabstop selects how many spaces the tab will be
+
+
