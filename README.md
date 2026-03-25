@@ -31,4 +31,13 @@ vim.opt.tabstop = 4
 - shiftwidth helps when we're shifting a line by a tab amount (If you also want to use tabs for indentation, you should also set shiftwidth to be the same as tabstop)
 - tabstop selects how many spaces the tab will be
 
-
+### KDE Connect
+- Great replacement for localsend, more natural, also seems to work on more networks more reliably, and allows for remote access of the laptop/computer screen from the phone! I'm considering using Weylus for cleaner drawing capability on the screen. Could test USB connection to see if helps.
+- To connect through IP address, you need to find your computer's IP address. The easiest way is taking the first IP address that shows up when using the command: `hostname -I`
+- You may also need to configure the Ubuntu firewall to allow the ports KDE Connect needs to use with the following 2 commands:
+```
+sudo ufw allow 1714:1764/tcp
+sudo ufw allow 1714:1764/udp
+```
+- Supposedly typing those commands in should also require a `sudo ufw reload`, and this command should work `sudo ufw status | grep 171
+`. I say *should* work because it didn't seem to do anything, saying something about there being no firewall. So I might be cool anyway. But it worked for me!
