@@ -41,3 +41,8 @@ sudo ufw allow 1714:1764/udp
 ```
 - Supposedly typing those commands in should also require a `sudo ufw reload`, and this command should work `sudo ufw status | grep 171
 `. I say *should* work because it didn't seem to do anything, saying something about there being no firewall. So I might be cool anyway. But it worked for me!
+
+### audit-repo.sh
+- When I download some package off github, I wonder if it's sus. A simple check I can run, using the audit-repo.sh in my home directory is to run the script on the file and see if anything pops up as suspicious or malicious.
+- (When initializing this script on a new device, remember to use `chmod +x audit-repo.sh` to allow the .sh file to execute.)
+- You can also enter the github editor on any github page by pressing the '.' key, and that will allow you to ctrl+shift+f for `exec(` calls encrypting bytes or long `base64` strings that could hide things that aren't pictures. 
