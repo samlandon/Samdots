@@ -45,4 +45,17 @@ sudo ufw allow 1714:1764/udp
 ### audit-repo.sh
 - When I download some package off github, I wonder if it's sus. A simple check I can run, using the audit-repo.sh in my home directory is to run the script on the file and see if anything pops up as suspicious or malicious.
 - (When initializing this script on a new device, remember to use `chmod +x audit-repo.sh` to allow the .sh file to execute.)
-- You can also enter the github editor on any github page by pressing the '.' key, and that will allow you to ctrl+shift+f for `exec(` calls encrypting bytes or long `base64` strings that could hide things that aren't pictures. 
+- You can also enter the github editor on any github page by pressing the '.' key, and that will allow you to ctrl+shift+f for `exec(` calls encrypting bytes or long `base64` strings that could hide things that aren't pictures.
+
+### USB Mouse not working??
+- If the USB Mouse isn't working randomly but works when you plug in, it might be autosuspend.
+- To check, run `cat /sys/module/usbcore/parameters/autosuspend`. If it's 2 or something low, autosuspend is likely active
+- Use `lsusb` to find the USB mouse, and find the ID, with parts like 046d:c52b
+- Using those parts of the ID, you can create/edit a rule for the usb power with `sudo nvim /etc/udev/rules.d/99-usb-power.rules`
+- Here you will enter this line: `ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="c52b", TEST=="power/control", ATTR{power/control}="on"` noting that ATTR{idVendor} and ATTR{idProduct} correspond to the two parts of the ID!
+
+### Copying a file into the clipboard:
+- using cat and xclip
+- `cat "FILE_TO_READ_FROM" | xclip -selection clipboard`
+- Replace the "FILE_TO_READ_FROM" with the file path you want to read from and you can also shorten `-selection clipboard` to `-sel clip`
+- 
