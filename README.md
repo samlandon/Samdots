@@ -58,4 +58,12 @@ sudo ufw allow 1714:1764/udp
 - using cat and xclip
 - `cat "FILE_TO_READ_FROM" | xclip -selection clipboard`
 - Replace the "FILE_TO_READ_FROM" with the file path you want to read from and you can also shorten `-selection clipboard` to `-sel clip`
-- 
+
+### Copying to clipboard from vim!!!
+- select the region you want such as everything with ggvG (like ctrl+a) or select an area and then use "+y, where + is the OS clipboard register
+
+### Find and replace in vim
+- If you only want to select a specific area, select it in visual mode, then type :s/replaceMe/withMe/gc (g matches all in a line and c gets confirmation each time, where y = yes, n = no, a = all, q = quit)
+- If you want to select all occurrences in the file, use '%', like so :%s/replaceMe/withMe/gc
+
+
