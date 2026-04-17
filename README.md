@@ -63,7 +63,7 @@ sudo ufw allow 1714:1764/udp
 - select the region you want such as everything with ggvG (like ctrl+a) or select an area and then use "+y, where + is the OS clipboard register
 
 ### Find and replace in vim
-- If you only want to select a specific area, select it in visual mode, then type :s/replaceMe/withMe/gc (g matches all in a line and c gets confirmation each time, where y = yes, n = no, a = all, q = quit)
-- If you want to select all occurrences in the file, use '%', like so :%s/replaceMe/withMe/gc
+- If you only want to select a specific area, select it in visual mode, then type `:s/replaceMe/withMe/gc` (g matches all in a line and c gets confirmation each time, where y = yes, n = no, a = all, q = quit)
+- If you want to select all occurrences in the file, use '%', like so `:%s/replaceMe/withMe/gc`
 
 
