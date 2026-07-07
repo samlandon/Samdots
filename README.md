@@ -75,3 +75,4 @@ sudo ufw allow 1714:1764/udp
 ### Multi-cursor for vim
 - `ctrl + v` sets block visual mode and you can navigate around in a box with hjkl and then yank like normal!
 - See epic link for more tips on stuff like `/find+enter cgn .` which is op title: "You don't need more than one cursor in vim" with awesome alternatives.
+- [Vim Multi Cursor](https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db)
