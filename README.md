@@ -66,4 +66,12 @@ sudo ufw allow 1714:1764/udp
 - If you only want to select a specific area, select it in visual mode, then type `:s/replaceMe/withMe/gc` (g matches all in a line and c gets confirmation each time, where y = yes, n = no, a = all, q = quit)
 - If you want to select all occurrences in the file, use '%', like so `:%s/replaceMe/withMe/gc`
 
+### nvim UltiSnips and plugins for LaTex etc.
+- my plugins: `~/.config/nvim/lua/plugins`
+- UltiSnips snippets location for LaTex snippets
+  - `~/.config/nvim/UltiSnips/tex.snippets`
+  - The tex. part means only tex files will be touched!
 
+### Multi-cursor for vim
+- `ctrl + v` sets block visual mode and you can navigate around in a box with hjkl and then yank like normal!
+- See epic link for more tips on stuff like `/find+enter cgn .` which is op title: "You don't need more than one cursor in vim" with awesome alternatives.
