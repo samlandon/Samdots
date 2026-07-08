@@ -67,6 +67,7 @@ sudo ufw allow 1714:1764/udp
 - If you want to select all occurrences in the file, use '%', like so `:%s/replaceMe/withMe/gc`
 
 ### nvim UltiSnips and plugins for LaTex etc.
+- [Using UltiSnips](https://castel.dev/post/lecture-notes-1/)
 - my plugins: `~/.config/nvim/lua/plugins`
 - UltiSnips snippets location for LaTex snippets
   - `~/.config/nvim/UltiSnips/tex.snippets`
