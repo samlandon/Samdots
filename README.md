@@ -77,3 +77,16 @@ sudo ufw allow 1714:1764/udp
 - `ctrl + v` sets block visual mode and you can navigate around in a box with hjkl and then yank like normal!
 - See epic link for more tips on stuff like `/find+enter cgn .` which is op title: "You don't need more than one cursor in vim" with awesome alternatives.
 - [Vim Multi Cursor](https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db)
+
+### Consider Swapping to LuaSnips from UltiSnips (why?)
+1. I mean, just look at the options for insert nodes, choice nodes, dynamic nodes, it's gorgeous!!!
+2. [LuaSnips](https://github.com/L3MON4D3/LuaSnip)
+
+### Personal nvim config ideas
+- I don't want bloat. Lazy.nvim is nice but I don't want to depend on a bunch of different plugins if I can avoid it.
+- [Single config file](https://github.com/fatih/dotfiles/blob/main/init.lua?ref=arslan.io), [Other Single config file](https://github.com/creativenull/nvim-oneconfig/blob/main/init.lua)
+- I want basic LSP, and they have it built in on v0.12, as well as a new vim.pack which is going to be very similar to mini.deps, which has now() and later() functions that do most of what lazy does by queueing the plugins to load only the important ones 'now' and the others 'later', crazy right! Although, it does look like I might need to play around with that because there seem to be no plans to implement `now()` and `later()` functions into the `vim.pack` built in
+- For LSP, I don't want more than the built in stuff as much as I can, though Mason might end up being a must-have for managing the language protocols I have. We can try without first though and only use the built in 
+4. [LSP Basics](https://lugh.ch/switching-to-neovim-native-lsp.html), [LSP Pro Help Builtin LSP](https://gpanders.com/blog/whats-new-in-neovim-0-11/#lspa)
+5. [Easy tutorial for setup nvim config](https://www.youtube.com/watch?v=zHTeCSVAFNY)
+6. [The Simple Suckless route (I still want lazy package management, but good to see how it can be done)](https://github.com/radleylewis/nvim-lite/blob/pluginless/init.lua)
