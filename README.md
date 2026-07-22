@@ -90,3 +90,8 @@ sudo ufw allow 1714:1764/udp
 4. [LSP Basics](https://lugh.ch/switching-to-neovim-native-lsp.html), [LSP Pro Help Builtin LSP](https://gpanders.com/blog/whats-new-in-neovim-0-11/#lspa)
 5. [Easy tutorial for setup nvim config](https://www.youtube.com/watch?v=zHTeCSVAFNY)
 6. [The Simple Suckless route (I still want lazy package management, but good to see how it can be done)](https://github.com/radleylewis/nvim-lite/blob/pluginless/init.lua)
+
+### No Plugins Nvim
+- [Native vim](https://boltless.me/posts/neovim-config-without-plugins-2025/)
+- [Native LSP pretty](https://dx13.co.uk/articles/2023/04/24/neovim-lsp-without-plugins/), and [this video](https://www.youtube.com/watch?v=yI9R13h9IEE)
+- 
