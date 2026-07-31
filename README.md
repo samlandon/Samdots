@@ -95,3 +95,19 @@ sudo ufw allow 1714:1764/udp
 - [Native vim](https://boltless.me/posts/neovim-config-without-plugins-2025/)
 - [Native LSP pretty](https://dx13.co.uk/articles/2023/04/24/neovim-lsp-without-plugins/), and [this video](https://www.youtube.com/watch?v=yI9R13h9IEE)
 - 
+
+### Fix for No Wifi Popups
+- create the following file as such `sudo nvim /etc/NetworkManager/conf.d/20-connectivity.conf`
+- and paste the following into it:
+```
+[connectivity]
+enabled=true
+uri=http://connectivity-check.ubuntu.com/
+response=NetworkManager is online
+interval=300
+```
+- The uri=http://connect... is the ubuntu option that checks for your wifi popups and this enabled part allows it to actually get past the DNS blocking popups
+
+### Where to Find the LazyVim Keymappings to Find my Favorites like line 195 <C-/>
+- `~/.local/share/nvim/lazy/LazyVim/lua/lazyvim/config/keymaps.lua`
+- Looks like we'll need to look into the Snacks, but i want to also add <C-/> to insert mode!
