@@ -111,3 +111,13 @@ interval=300
 ### Where to Find the LazyVim Keymappings to Find my Favorites like line 195 <C-/>
 - `~/.local/share/nvim/lazy/LazyVim/lua/lazyvim/config/keymaps.lua`
 - Looks like we'll need to look into the Snacks, but i want to also add <C-/> to insert mode!
+
+### Functionality I Want in My nvim Config
+- deletion puts the delete buffer into a different key than the y copy paste buffer so that I can copy something, delete something, and paste the thing I wanted to paste before originally!
+- Popup terminal VSCode style at the bottom of the screen with <C-/> like in LazyVim. See the LazyVim Snacks.
+- Snippets and VimTex to use vim as a LaTeX editor
+- LSP support? Built in or Mason? Still not sure, but lsp-config is at least a good place to get good syntax
+- use built in vim.pack instead of lazy? Could try mini.deps, but the `later()` thing I like about it doesnt seem to be implemented in vim.pack which is dumb
+- I think its built in, but `@@` or `@:` should repeat the last `:` command and the `.` repeats normal mode commands. Also, see all `:` command history with `q:`
+- Figure out if its needed but I really like mini.ai for () completions. Try without first, though.
+- I think I want LuaSnip for snippets because of the insert, choice, dynamic and other nodes that just aren't built in, but are super handy
