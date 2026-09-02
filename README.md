@@ -121,3 +121,29 @@ interval=300
 - I think its built in, but `@@` or `@:` should repeat the last `:` command and the `.` repeats normal mode commands. Also, see all `:` command history with `q:`
 - Figure out if its needed but I really like mini.ai for () completions. Try without first, though.
 - I think I want LuaSnip for snippets because of the insert, choice, dynamic and other nodes that just aren't built in, but are super handy
+
+### Windows Fresh nvim Install Notes
+- `:echo stdpath('config')` (this is where my init.lua is)
+- use `:luafile %` to source the init.lua from within the file
+- use `:Explore` to pull up netrw to manage files, and use `%` to create a file and `d` to create a directory.
+
+### LaTeX Tips:
+* `\infty`, `|absoluteval|`, `$\int_{lowerbound}^{upperbound}{actualintegralpart}$` inline math
+* `\lim_{t \to \infty}theExpression`
+* Helpful Latex Cheat Sheets
+  * [Super good!](https://en.wikibooks.org/wiki/LaTeX)
+  * [Condensed](https://wch.github.io/latexsheet/)
+  * [Useful!](https://ctan.org/pkg/undergradmath)
+  * [DRAW on the go!!!!](https://detexify.kirelabs.org/#/)
+  * [quickref](https://quickref.me/latex.html)
+  * [cheatsheet](https://fg.informatik.uni-goettingen.de/file/latex-cheatsheet.pdf)
+  * [good lookup](https://resources.latex-cloud-studio.com/learn/latex/formatting/headers-footers)
+  * [og intro to snippets](https://castel.dev/post/lecture-notes-1/)
+```
+\begin{itemize}
+  \item firstitem
+\end{itemize}
+```
+
+
+  
